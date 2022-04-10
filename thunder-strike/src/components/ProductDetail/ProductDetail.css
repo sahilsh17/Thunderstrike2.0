@@ -1,0 +1,199 @@
+h1.product-name{
+  font-family: 'Oswald', sans-serif;
+  color: black;
+  text-transform: uppercase;
+  padding: 50px 0 0 0;
+  text-align: left;
+}
+.detail-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.product-image{
+  width: 491px;
+  height: 687px;
+}
+.product-price {
+  text-align: left;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+.product-summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  height: 80%;
+  width: 500px;
+}
+
+.add-to-cart{
+  width:390px;
+}
+button.add-to-cart {
+  position: relative;
+  top: auto;
+  box-shadow:none;
+  margin-top: 20px;
+  font-weight: bold; 
+}
+button.buy {
+  position: relative;
+  top: auto;
+  box-shadow:none;
+  margin-top: 20px;
+  background-color:rgb(64, 74, 160);
+  width: 396px;
+  font-weight: bold; 
+
+}
+.product-description{
+  padding: 10px;
+  width: 396px;
+  text-align: left;
+  border: 1px solid rgb(194, 194, 194);
+}
+h6{
+  font-family: 'Oswald', sans-serif;
+  color: black;
+  padding: 40px 10px 0 10px;
+  text-align: left;
+
+}
+h4.back-to-home-link{
+  font-family: 'Oswald', sans-serif;
+  color: black;
+  justify-content: center;
+  text-align: center;
+  padding-top: 90px;
+}
+div.back-home{
+  background-color: rgb(236, 236, 236);
+  height: 200px;
+  
+}
+h4.back-to-home-link:hover{
+  color: #da0b0b;
+    text-decoration: none;
+
+}
+
+@media screen and (max-width: 800px) {
+  h1.product-name{
+    font-family: 'Oswald', sans-serif;
+    color: black;
+    text-transform: uppercase;
+    padding: 50px 0 0 0;
+    text-align: left;
+    font-size: 30px;
+  }
+  .detail-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 50px;
+  }
+  button.add-to-cart {
+    position: relative;
+    top: auto;
+    box-shadow:none;
+    margin-top: 20px;
+    width: 100%;
+  }
+  button.buy {
+    position: relative;
+    top: auto;
+    box-shadow:none;
+    margin-top: 20px;
+    background-color:rgb(64, 74, 160);
+    width: 100%;
+   
+  }
+  
+  .product-description{
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border: 1px solid rgb(194, 194, 194);
+    word-wrap: break-word;
+  }
+  .product-image{
+    width: 410px;
+    height: 487px;
+  }
+  .nav-bar > img.logo{
+    height: 70px;
+    width: 114px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  h1.product-name{
+    font-family: 'Oswald', sans-serif;
+    color: black;
+    text-transform: uppercase;
+    padding: 50px 0 0 0;
+    text-align: center;
+  }
+  .detail-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 50px;
+    word-wrap: break-word;
+    width: 100vw;
+  }
+  .product-summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items:center;
+    height: 80%;
+    width:90vw;
+  }
+  button.add-to-cart {
+    position: relative;
+    top: auto;
+    box-shadow:none;
+    margin-top: 20px;
+    width: 90vw;
+  }
+  button.buy {
+    position: relative;
+    top: auto;
+    box-shadow:none;
+    margin-top: 20px;
+    background-color:rgb(64, 74, 160);
+    width: 90vw;
+    
+  }
+  
+  .product-price {
+    text-align: left;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 18px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .product-description{
+    padding: 10px;
+   word-wrap: break-word;
+    text-align: left;
+    border: 1px solid rgb(194, 194, 194);
+    width: 90vw;
+
+  }
+  .product-image{
+    width: 310px;
+    height: 387px;
+  }
+  .nav-bar > img.logo{
+    height: 70px;
+    width: 114px;
+  }
+}

@@ -1,0 +1,253 @@
+.card {
+  width: 300px;
+  background: #fff;
+  transition: box-shadow 0.3s ease-in-out;
+ 
+  position: relative;
+  transform: scale(1.015);
+  transition: 0.15s linear;
+  border: 0px !important;
+}
+.wrapper{
+  padding: 10px;
+}
+/* Add box shadow to entire card on hover */
+.card:hover {
+  box-shadow: 0 1px 35px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Creates variation of card component in a wide format */
+.card.card--wide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 768px;
+}
+
+.card__media {
+  position: relative;
+  width: 300px;
+}
+
+/* Adds transparent overlay over image. */
+.card__media::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.card__media img {
+  display: block;
+  max-width: 99%;
+  height: 350px;
+  background-color: white;
+
+}
+
+.card__date {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #e74c3c;
+  color: white;
+  font-weight: bold;
+}
+
+.date--day {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.date--month {
+  font-size: 14px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.card__category {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.06em;
+  display: inline-block;
+  color: white;
+  background: #e74c3c;
+  text-align: center;
+  padding: 5px 15px;
+  text-transform: uppercase;
+}
+
+.card__content {
+  padding: 40px 25px;
+  color: #999999;
+  transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
+}
+
+/* Changes padding on wide card */
+.card--wide .card__content {
+  padding: 20px 20px;
+  width: calc(100% - 300px);
+}
+
+/* By default we hide the excerpt on card long. */
+.card__excerpt {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+/* Removes max-height on wide card */
+.card--wide .card__excerpt {
+  max-height: none;
+}
+
+/* On hover, we expand the excerpt container to show the text. */
+.card:hover .card__excerpt {
+  max-height: 300px;
+}
+
+.card__title {
+  color: initial;
+  margin: 0 0 10px;
+  font-size: 20px;
+  font-weight: bold
+}
+
+.card__subtitle {
+  color: #e74c3c;
+  font-weight: 300;
+}
+
+.card__meta {
+  color: #ccc;
+  font-size: 14px;
+}
+.card-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+
+h1.product-title{
+  color: White;
+  font-family: 'Oswald', sans-serif;
+padding: 50px;
+font-weight: bold;
+}
+button {
+  display: block; 
+  box-shadow: 0px 0px 17px 1px rgba(0, 0, 0, 0.34);
+  background-color: #da0b0b;
+  color:white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  width: 250px;
+  height: 64px;
+  line-height: 64px;
+  margin-top: 4em;
+  position: absolute;  
+  top: 200px;
+
+  }
+  .overlay{
+    opacity: 0;
+    transition: 0.2s linear;
+  }
+  .card__price{
+    color: initial;
+  margin: 0 0 10px;
+  font-size: 15px;
+
+  }
+  
+  .wrapper:hover .overlay{
+    opacity: 1;
+    transition: 0.2s linear;
+
+  }
+  button.view{
+    font-weight: bolder;
+  }
+  @media screen and (max-width: 520px) {
+    h1.product-name{
+      font-family: 'Oswald', sans-serif;
+      color: black;
+      text-transform: uppercase;
+      padding: 50px 0 0 0;
+      text-align: center;
+    }
+    .detail-section{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      padding-bottom: 50px;
+      word-wrap: break-word;
+      width: 100vw;
+    }
+    .product-summary {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      flex-wrap: nowrap;
+      align-items:center;
+      height: 80%;
+      width:90vw;
+    }
+    button.add-to-cart {
+      position: relative;
+      top: auto;
+      box-shadow:none;
+      margin-top: 20px;
+      width: 90vw;
+    }
+    button.buy {
+      position: relative;
+      top: auto;
+      box-shadow:none;
+      margin-top: 20px;
+      background-color:rgb(64, 74, 160);
+      width: 90vw;
+      
+    }
+    
+    .product-price {
+      text-align: left;
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-size: 18px;
+      margin-bottom: 0;
+      text-align: center;
+    }
+    .product-description{
+      padding: 10px;
+     word-wrap: break-word;
+      text-align: left;
+      border: 1px solid rgb(194, 194, 194);
+      width: 90vw;
+  
+    }
+    .product-image{
+      width: 310px;
+      height: 387px;
+    }
+    .nav-bar > img.logo{
+      height: 70px;
+      width: 114px;
+    }
+  }

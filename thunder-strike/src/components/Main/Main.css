@@ -1,0 +1,94 @@
+section.description{
+  width: 100%;
+  display: flex;
+  padding: 7% 15%;
+  align-items: space-between;
+  align-content: space-around;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+.section-description{
+  align-items: start;
+  text-align: left;
+  
+}
+.content-wrap{
+  display: flex;
+  align-items: space-between;
+  align-content: space-around;
+}
+.section-image{
+  padding-left: 100px;
+}
+div.section-image > img {
+  width: 400px;
+  height: 400px;
+}
+
+@media screen and (max-width: 800px) {
+  .content-wrap, .img {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    display: block;
+  }
+  .section-description{
+    width: 100%;
+  }
+  .section-image{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .content-wrap > h4 {
+    font-size: 23px;
+  }
+  .description-btn{
+    width: 250px;
+  }
+  .section-image{
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+    padding-top: 50px;
+  }
+  section.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 500px) {
+  .content-wrap {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    display: block;
+    
+  }
+  div.section-image > img {
+    width: 350px;
+    height: 350px;
+  }
+  .content-wrap > h4 {
+    font-size: 20px;
+  }
+  .section-image{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 0;
+    padding-top: 25px;
+  }
+  .description-btn{
+    width: 250px;
+  }
+  .section-description{
+    width: 100%;
+  }
+  section.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+  }
+}
